@@ -1,0 +1,1 @@
+$('#barcode').JsBarcode($('#barcode').attr('code'));
