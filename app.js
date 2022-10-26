@@ -11,7 +11,7 @@ app.set('view engine', 'pug');
 app.use(express.static(path.join(__dirname, 'public')));
 
 var genBarcode = function (code, filename, callback) {
-    codes.loadModules(["code128"], { "includetext": true, "guardwhitespace": false, "inkspread": 0, scaleX: 2, scaleY: 1, textyoffset: 0 });
+    codes.loadModules(["code128"], { "includetext": true, "guardwhitespace": false, "inkspread": 0, scaleX: 4.16260162602, scaleY: 2, textyoffset: 5 });
 
     var barcode = codes.create("code128", code);
 
